@@ -1,3 +1,42 @@
 /*thumbnails*/
 /*base*/
 
+@media (max-width: 576px)
+{
+    .container
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        width: 99%;
+        img
+        {
+            max-width: 90%;
+        }
+
+    }
+    button
+    {
+        display: none;
+    }
+    .navbar
+    {
+        width: 100%;
+        justify-content: end;
+    }
+
+    .nav-imagenes
+    {
+        margin-left: 60px;
+    }
+
+    .inicio
+    {
+        width: 100%;
+    }
+
+    h1, h2, h3, h4, h5
+    {
+        font-size: medium;
+    }
+}

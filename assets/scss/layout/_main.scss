@@ -12,13 +12,9 @@
 .container
 {
     
-    display: grid;
-    grid-template-columns: auto;
-    background-color:aliceblue;
-    .row
-        {
         display: grid;
         grid-template-columns: repeat(4,auto);
         grid-gap: 20px;
-    }
+        font-family: 'Times New Roman', Times, serif;
+    
 }

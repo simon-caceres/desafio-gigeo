@@ -9934,16 +9934,10 @@ img {
 }
 
 .container {
-  padding-left: 10px;
-  padding-right: 10px;
-  display: grid;
-  grid-template-columns: auto;
-  background-color: aliceblue;
-}
-.container .row {
   display: grid;
   grid-template-columns: repeat(4, auto);
   grid-gap: 20px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 /*COMPONENTS: BUTTON*/
@@ -9958,7 +9952,47 @@ img {
   text-align: right;
 }
 
+.navbar {
+  justify-content: flex-end;
+}
+
+.navbar > a {
+  justify-content: flex-start;
+}
+
 /*thumbnails*/
 /*base*/
+@media (max-width: 576px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    width: 99%;
+  }
+  .container img {
+    max-width: 90%;
+  }
+
+  button {
+    display: none;
+  }
+
+  .navbar {
+    width: 100%;
+    justify-content: end;
+  }
+
+  .nav-imagenes {
+    margin-left: 60px;
+  }
+
+  .inicio {
+    width: 100%;
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-size: medium;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
